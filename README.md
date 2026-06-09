@@ -26,7 +26,7 @@ Principi comuni a tutti i progetti:
 </tr>
 <tr>
 <td width="50%"><a href="https://github.com/mdegiulio97/phasor-flim-explorer"><img src="https://raw.githubusercontent.com/mdegiulio97/phasor-flim-explorer/main/results/phasor_plot.png" width="100%"/></a><br/><sub><b>phasor-flim-explorer</b> — piano fasoriale e unmixing fit-free dei fluorofori</sub></td>
-<td width="50%"><a href="https://github.com/mdegiulio97/cxr-xai-uncertainty"><img src="https://raw.githubusercontent.com/mdegiulio97/cxr-xai-uncertainty/main/results/gradcam_examples.png" width="100%"/></a><br/><sub><b>cxr-xai-uncertainty</b> — Grad-CAM su radiografie del torace (spiegabilità)</sub></td>
+<td width="50%"><a href="https://github.com/mdegiulio97/cxr-xai-uncertainty"><img src="https://raw.githubusercontent.com/mdegiulio97/cxr-xai-uncertainty/main/results/tumor_gradcam.png" width="100%"/></a><br/><sub><b>cxr-xai-uncertainty</b> — Grad-CAM su MRI cerebrale (glioma vs non-glioma)</sub></td>
 </tr>
 </table>
 
@@ -34,7 +34,7 @@ Principi comuni a tutti i progetti:
 
 | Progetto | Tema | Dataset | Risultato chiave (vs baseline) |
 |---|---|---|---|
-| [cxr-xai-uncertainty](https://github.com/mdegiulio97/cxr-xai-uncertainty) | Classificazione + XAI + incertezza | PneumoniaMNIST (CC BY 4.0) | AUROC **0.963** vs 0.927 (logistica); incertezza MC-Dropout 3× più alta sugli errori; ECE 0.172 → 0.146 con temperature scaling |
+| [cxr-xai-uncertainty](https://github.com/mdegiulio97/cxr-xai-uncertainty) | Classificazione + XAI + incertezza | PneumoniaMNIST (CC BY 4.0) **+ MRI cerebrale Cheng** (glioma vs non-glioma, CC BY 4.0) | chest: AUROC 0.963; **brain: AUROC 0.980 vs 0.859, ECE 0.039→0.013, incertezza ~4.5× sugli errori** |
 | [genai-mri-superres](https://github.com/mdegiulio97/genai-mri-superres) | GenAI / super-risoluzione image-to-image | BloodMNIST (CC BY 4.0) **+ MRI cerebrale T1w reale** (OpenNeuro ds007116, CC0) | benchmark: PSNR +2.17 dB vs bicubico; **brain reale (soggetto held-out): +0.52 dB, SSIM +0.007** |
 | [phasor-flim-explorer](https://github.com/mdegiulio97/phasor-flim-explorer) | Phasor analysis fit-free (FLIM) | Sintetico (ground truth) | MAE unmixing migliore del fitting NNLS a ogni livello di fotoni (es. 0.100 vs 0.136 @ 300 ph), ~**32×** più veloce |
 | [pinn-qmri](https://github.com/mdegiulio97/pinn-qmri) | Physics-Informed NN / relaxometria T2–T2* | Sintetico (ground truth) **+ MRI cerebrale multi-echo reale** (OpenNeuro ds007116, CC0) | sintetico: competitiva col LS ad alto rumore; **brain reale (validazione held-out echo): T2\* 50.4 ms, NRMSE 0.075 vs LS 0.100** |
