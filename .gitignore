@@ -1,0 +1,14 @@
+# Questo repository indice traccia solo la README del portfolio.
+# Ogni mini-progetto è un repository git separato e va escluso qui.
+cxr-xai-uncertainty/
+genai-mri-superres/
+phasor-flim-explorer/
+pinn-qmri/
+rag-radiology-reports/
+ml-clinical-template/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
