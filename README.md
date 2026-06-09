@@ -17,6 +17,19 @@ Principi comuni a tutti i progetti:
   (`app/main.py`).
 - **Qualità**: lint con `ruff`, test con `pytest`, CI GitHub Actions.
 
+## Anteprima
+
+<table>
+<tr>
+<td width="50%"><a href="https://github.com/mdegiulio97/genai-mri-superres"><img src="https://raw.githubusercontent.com/mdegiulio97/genai-mri-superres/main/results/brain_examples.png" width="100%"/></a><br/><sub><b>genai-mri-superres</b> — super-risoluzione ×2 di MRI cerebrale T1w reale (bicubico / SR / HR)</sub></td>
+<td width="50%"><a href="https://github.com/mdegiulio97/pinn-qmri"><img src="https://raw.githubusercontent.com/mdegiulio97/pinn-qmri/main/results/real_t2star_maps.png" width="100%"/></a><br/><sub><b>pinn-qmri</b> — mappe T2* su MRI cerebrale multi-echo reale (PINN vs least-squares)</sub></td>
+</tr>
+<tr>
+<td width="50%"><a href="https://github.com/mdegiulio97/phasor-flim-explorer"><img src="https://raw.githubusercontent.com/mdegiulio97/phasor-flim-explorer/main/results/phasor_plot.png" width="100%"/></a><br/><sub><b>phasor-flim-explorer</b> — piano fasoriale e unmixing fit-free dei fluorofori</sub></td>
+<td width="50%"><a href="https://github.com/mdegiulio97/cxr-xai-uncertainty"><img src="https://raw.githubusercontent.com/mdegiulio97/cxr-xai-uncertainty/main/results/gradcam_examples.png" width="100%"/></a><br/><sub><b>cxr-xai-uncertainty</b> — Grad-CAM su radiografie del torace (spiegabilità)</sub></td>
+</tr>
+</table>
+
 ## Progetti
 
 | Progetto | Tema | Dataset | Risultato chiave (vs baseline) |
