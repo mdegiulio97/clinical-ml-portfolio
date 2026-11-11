@@ -26,7 +26,7 @@ Principles shared by all projects:
 
 | Project | Topic | Data | Key result (vs baseline) |
 |---|---|---|---|
-| [medical-xai-uncertainty](https://github.com/mdegiulio97/medical-xai-uncertainty) | Classification + XAI + uncertainty | Cheng brain MRI, 233 patients, split by patient (CC BY 4.0) + PneumoniaMNIST (CC BY 4.0) | brain: AUROC 0.961 vs 0.881; chest: AUROC 0.963 vs 0.927. At the 0.5 threshold accuracy/F1 are below the baseline (stated in the README) |
+| [medical-xai-uncertainty](https://github.com/mdegiulio97/medical-xai-uncertainty) | Classification + XAI + uncertainty | Cheng brain MRI, 209 patients, split by patient (CC BY 4.0) + PneumoniaMNIST (CC BY 4.0) | brain: AUROC 0.942 vs 0.846; chest: AUROC 0.963 vs 0.927 (chest accuracy/F1 at 0.5 are below the baseline, stated in the README) |
 | [genai-mri-superres](https://github.com/mdegiulio97/genai-mri-superres) | Image-to-image super-resolution | Real T1w brain MRI (OpenNeuro ds007116, CC0) + BloodMNIST microscopy (CC BY 4.0) | brain, held-out subject: +0.52 dB PSNR, +0.007 SSIM; BloodMNIST: +2.17 dB |
 | [pinn-qmri](https://github.com/mdegiulio97/pinn-qmri) | Physics-informed network, T2/T2* relaxometry | Synthetic (ground truth) + real multi-echo brain MRI (OpenNeuro ds007116, CC0) | real brain, held-out-echo validation: NRMSE 0.075 vs 0.100 (least squares) |
 | [phasor-flim-explorer](https://github.com/mdegiulio97/phasor-flim-explorer) | Fit-free phasor analysis (FLIM) | Synthetic (ground truth) | unmixing MAE below NNLS fitting at every photon count (e.g. 0.100 vs 0.136 at 300 photons), ~32× faster |
