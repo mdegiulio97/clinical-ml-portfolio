@@ -26,10 +26,10 @@ Principles shared by all projects:
 
 | Project | Topic | Data | Key result (vs baseline) |
 |---|---|---|---|
-| [medical-xai-uncertainty](https://github.com/mdegiulio97/medical-xai-uncertainty) | Classification + XAI + uncertainty | Cheng brain MRI, 209 patients, split by patient (CC BY 4.0) + PneumoniaMNIST (CC BY 4.0) | brain: AUROC 0.942 vs 0.846; chest: AUROC 0.963 vs 0.927 (chest accuracy/F1 at 0.5 are below the baseline, stated in the README) |
-| [genai-mri-superres](https://github.com/mdegiulio97/genai-mri-superres) | Image-to-image super-resolution | Real T1w brain MRI (OpenNeuro ds007116, CC0) + BloodMNIST microscopy (CC BY 4.0) | brain, held-out subject: +0.52 dB PSNR, +0.007 SSIM; BloodMNIST: +2.17 dB |
+| [medical-xai-uncertainty](https://github.com/mdegiulio97/medical-xai-uncertainty) | Classification + XAI + uncertainty | Cheng brain MRI, 209 patients, split by patient (CC BY 4.0) + PneumoniaMNIST (CC BY 4.0) | brain: AUROC 0.942 vs 0.846; chest: AUROC 0.962 vs 0.927 (chest accuracy/F1 at 0.5 are below the baseline, stated in the README) |
+| [genai-mri-superres](https://github.com/mdegiulio97/genai-mri-superres) | Image-to-image super-resolution | Real T1w brain MRI (OpenNeuro ds007116, CC0) + BloodMNIST microscopy (CC BY 4.0) | brain, held-out subject: +0.52 dB PSNR, +0.007 SSIM; BloodMNIST: +2.13 dB |
 | [pinn-qmri](https://github.com/mdegiulio97/pinn-qmri) | Physics-informed network, T2/T2* relaxometry | Synthetic (ground truth) + real multi-echo brain MRI (OpenNeuro ds007116, CC0) | real brain, held-out-echo validation: NRMSE 0.075 vs 0.100 (least squares) |
-| [phasor-flim-explorer](https://github.com/mdegiulio97/phasor-flim-explorer) | Fit-free phasor analysis (FLIM) | Synthetic (ground truth) | unmixing MAE below NNLS fitting at every photon count (e.g. 0.100 vs 0.136 at 300 photons), ~32× faster |
+| [phasor-flim-explorer](https://github.com/mdegiulio97/phasor-flim-explorer) | Fit-free phasor analysis (FLIM) | Synthetic (ground truth) | unmixing MAE below NNLS fitting at every photon count (e.g. 0.100 vs 0.136 at 300 photons), ~23× faster |
 | [rag-radiology-reports](https://github.com/mdegiulio97/rag-radiology-reports) | Local RAG with citations | Synthetic reports | functional check only (author-written queries on a 15-report corpus), not a benchmark |
 
 Reusable template: [**ml-clinical-template**](https://github.com/mdegiulio97/ml-clinical-template) (structure, seeding utilities, CI).
